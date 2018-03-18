@@ -8483,6 +8483,7 @@ var _evancz$elm_markdown$Markdown$Options = F4(
 var _user$project$Model$thiefMarkdownText = '\n    Quiet as as ghosts they prowl, maybe working for a living is not for them, maybe it is proving their worth, or maybe this is all they know how to do. Why toil in life when so many good things are just ripe for the taking?\n    Caravans full of riches travel your land; maybe they should pay a toll for that, and why not you to collect it?\n    _\"All adventures are thieves... just some are honest about it.\" – Pathfinder_\n\n    ';
 var _user$project$Model$rangerMarkdownText = '\n    The trackers, scouts and hunters of the Seven Kingdoms, they can mostly be found on the fringes of civilization or in-between places. They have a connection with the land, few in civilized places do. \n    _\"Hear me. Never flee from a Ranger. Better to face them in battle immediately than to have them hunt you down...\"  - Stalwart Warrior_\n    ';
 var _user$project$Model$fighterMarkdownText = '\n    Warriors, soldiers, and the famed defenders of the realm while many know how to fight the _fighter_ class is a true warrior, trained, honed, capable. Many fighters in the Seven Kingdoms don\'t do it as a full-time, many are farmers, builders, craftmen but all have the strength to protect civilization.\n    _\"The spit and blood fill your mouth, dirt bites your eyes and yet, one simply does not give up.\" - King Rodus of Alaria_\n\n    ';
+var _user$project$Model$fighterMarkdownImage = '\n    ![fighter](https://pre00.deviantart.net/d6b9/th/pre/f/2011/272/7/2/branwen_the_deathdancer_by_grb76-d4b78yr.jpg)\n    <style> img{text-align: left; max-width:  400px; max-height: 350px; float: right;} </style>\n    ';
 var _user$project$Model$thiefMarkdownImage = '\n    ![thief](https://orig00.deviantart.net/c7c6/f/2013/301/2/1/once_a_thief_by_isbjorg-d6s41f8.jpg)\n    <style> img{text-align: left; max-width:  400px; max-height: 350px; float: right;} </style>\n    ';
 var _user$project$Model$bardMarkdownImage = '\n    ![bard](https://pre00.deviantart.net/cc2b/th/pre/i/2015/292/7/1/minstrel_by_sagasketchbook-d9dngos.jpg)\n    <style> img{text-align: left; max-width:  400px; max-height: 350px; float: right;} </style>\n    ';
 var _user$project$Model$rangerMarkdownImage = '\n    ![ranger](https://pre00.deviantart.net/4227/th/pre/i/2014/139/0/6/ranger_by_greyhues-d7ixb51.jpg)\n    <style> img{text-align: left; max-width:  400px; max-height: 350px; float: right;} </style>\n    ';
@@ -8605,7 +8606,15 @@ var _user$project$Model$initialModel = {
 							_1: {
 								ctor: '::',
 								_0: _user$project$Model$RmQuestion(104),
-								_1: {ctor: '[]'}
+								_1: {
+									ctor: '::',
+									_0: _user$project$Model$RmQuestion(106),
+									_1: {
+										ctor: '::',
+										_0: _user$project$Model$RmQuestion(108),
+										_1: {ctor: '[]'}
+									}
+								}
 							}
 						}
 					}
@@ -8620,20 +8629,28 @@ var _user$project$Model$initialModel = {
 							_0: _user$project$Model$AddQuestion(101),
 							_1: {
 								ctor: '::',
-								_0: _user$project$Model$RmQuestion(103),
+								_0: _user$project$Model$RmQuestion(106),
 								_1: {
 									ctor: '::',
-									_0: _user$project$Model$RmQuestion(104),
+									_0: _user$project$Model$RmQuestion(108),
 									_1: {
 										ctor: '::',
-										_0: _user$project$Model$AddQuestion(201),
+										_0: _user$project$Model$RmQuestion(103),
 										_1: {
 											ctor: '::',
-											_0: _user$project$Model$RmQuestion(202),
+											_0: _user$project$Model$RmQuestion(104),
 											_1: {
 												ctor: '::',
-												_0: _user$project$Model$RmQuestion(203),
-												_1: {ctor: '[]'}
+												_0: _user$project$Model$AddQuestion(201),
+												_1: {
+													ctor: '::',
+													_0: _user$project$Model$RmQuestion(202),
+													_1: {
+														ctor: '::',
+														_0: _user$project$Model$RmQuestion(203),
+														_1: {ctor: '[]'}
+													}
+												}
 											}
 										}
 									}
@@ -8645,26 +8662,34 @@ var _user$project$Model$initialModel = {
 						ctor: '::',
 						_0: {
 							ctor: '::',
-							_0: _user$project$Model$AddQuestion(103),
+							_0: _user$project$Model$AddQuestion(106),
 							_1: {
 								ctor: '::',
-								_0: _user$project$Model$RmQuestion(102),
+								_0: _user$project$Model$AddQuestion(103),
 								_1: {
 									ctor: '::',
-									_0: _user$project$Model$RmQuestion(101),
+									_0: _user$project$Model$RmQuestion(102),
 									_1: {
 										ctor: '::',
-										_0: _user$project$Model$RmQuestion(104),
+										_0: _user$project$Model$RmQuestion(108),
 										_1: {
 											ctor: '::',
-											_0: _user$project$Model$AddQuestion(202),
+											_0: _user$project$Model$RmQuestion(101),
 											_1: {
 												ctor: '::',
-												_0: _user$project$Model$RmQuestion(201),
+												_0: _user$project$Model$RmQuestion(104),
 												_1: {
 													ctor: '::',
-													_0: _user$project$Model$RmQuestion(203),
-													_1: {ctor: '[]'}
+													_0: _user$project$Model$AddQuestion(202),
+													_1: {
+														ctor: '::',
+														_0: _user$project$Model$RmQuestion(201),
+														_1: {
+															ctor: '::',
+															_0: _user$project$Model$RmQuestion(203),
+															_1: {ctor: '[]'}
+														}
+													}
 												}
 											}
 										}
@@ -8676,26 +8701,34 @@ var _user$project$Model$initialModel = {
 							ctor: '::',
 							_0: {
 								ctor: '::',
-								_0: _user$project$Model$AddQuestion(104),
+								_0: _user$project$Model$AddQuestion(108),
 								_1: {
 									ctor: '::',
-									_0: _user$project$Model$RmQuestion(102),
+									_0: _user$project$Model$AddQuestion(104),
 									_1: {
 										ctor: '::',
-										_0: _user$project$Model$RmQuestion(101),
+										_0: _user$project$Model$RmQuestion(106),
 										_1: {
 											ctor: '::',
-											_0: _user$project$Model$RmQuestion(103),
+											_0: _user$project$Model$RmQuestion(102),
 											_1: {
 												ctor: '::',
-												_0: _user$project$Model$AddQuestion(203),
+												_0: _user$project$Model$RmQuestion(101),
 												_1: {
 													ctor: '::',
-													_0: _user$project$Model$RmQuestion(201),
+													_0: _user$project$Model$RmQuestion(103),
 													_1: {
 														ctor: '::',
-														_0: _user$project$Model$RmQuestion(202),
-														_1: {ctor: '[]'}
+														_0: _user$project$Model$AddQuestion(203),
+														_1: {
+															ctor: '::',
+															_0: _user$project$Model$RmQuestion(201),
+															_1: {
+																ctor: '::',
+																_0: _user$project$Model$RmQuestion(202),
+																_1: {ctor: '[]'}
+															}
+														}
 													}
 												}
 											}
@@ -8769,12 +8802,16 @@ var _user$project$Model$initialModel = {
 						ctor: '::',
 						_0: A8(
 							_user$project$Model$QuestionRecord,
-							104,
-							'The Thief',
+							106,
+							'',
 							{
 								ctor: '::',
-								_0: A2(_elm_lang$core$Basics_ops['++'], '__Thief__', _user$project$Model$thiefMarkdownText),
-								_1: {ctor: '[]'}
+								_0: '_fighter image from devianart_',
+								_1: {
+									ctor: '::',
+									_0: _user$project$Model$fighterMarkdownImage,
+									_1: {ctor: '[]'}
+								}
 							},
 							_user$project$Model$MarkdownBlock,
 							_user$project$Model$None,
@@ -8785,126 +8822,50 @@ var _user$project$Model$initialModel = {
 							ctor: '::',
 							_0: A8(
 								_user$project$Model$QuestionRecord,
-								201,
-								'Choose your Race',
+								104,
+								'The Thief',
 								{
 									ctor: '::',
-									_0: '',
-									_1: {
-										ctor: '::',
-										_0: 'Races for Ranger',
-										_1: {ctor: '[]'}
-									}
+									_0: A2(_elm_lang$core$Basics_ops['++'], '__Thief__', _user$project$Model$thiefMarkdownText),
+									_1: {ctor: '[]'}
 								},
-								_user$project$Model$RadioButton,
+								_user$project$Model$MarkdownBlock,
 								_user$project$Model$None,
-								{
-									ctor: '::',
-									_0: 'Elf',
-									_1: {
-										ctor: '::',
-										_0: 'Human',
-										_1: {ctor: '[]'}
-									}
-								},
-								{
-									ctor: '::',
-									_0: {
-										ctor: '::',
-										_0: _user$project$Model$Nothing,
-										_1: {ctor: '[]'}
-									},
-									_1: {
-										ctor: '::',
-										_0: {
-											ctor: '::',
-											_0: _user$project$Model$Nothing,
-											_1: {ctor: '[]'}
-										},
-										_1: {
-											ctor: '::',
-											_0: {
-												ctor: '::',
-												_0: _user$project$Model$Nothing,
-												_1: {ctor: '[]'}
-											},
-											_1: {ctor: '[]'}
-										}
-									}
-								},
+								{ctor: '[]'},
+								{ctor: '[]'},
 								{ctor: '[]'}),
 							_1: {
 								ctor: '::',
 								_0: A8(
 									_user$project$Model$QuestionRecord,
-									202,
-									'Choose your Race',
+									108,
+									'',
 									{
 										ctor: '::',
-										_0: '',
+										_0: '_thief image from devianart_',
 										_1: {
 											ctor: '::',
-											_0: 'Races for Fighter',
+											_0: _user$project$Model$thiefMarkdownImage,
 											_1: {ctor: '[]'}
 										}
 									},
-									_user$project$Model$RadioButton,
+									_user$project$Model$MarkdownBlock,
 									_user$project$Model$None,
-									{
-										ctor: '::',
-										_0: 'Dwarf',
-										_1: {
-											ctor: '::',
-											_0: 'Elf',
-											_1: {
-												ctor: '::',
-												_0: 'Human',
-												_1: {
-													ctor: '::',
-													_0: 'Halfling',
-													_1: {ctor: '[]'}
-												}
-											}
-										}
-									},
-									{
-										ctor: '::',
-										_0: {
-											ctor: '::',
-											_0: _user$project$Model$Nothing,
-											_1: {ctor: '[]'}
-										},
-										_1: {
-											ctor: '::',
-											_0: {
-												ctor: '::',
-												_0: _user$project$Model$Nothing,
-												_1: {ctor: '[]'}
-											},
-											_1: {
-												ctor: '::',
-												_0: {
-													ctor: '::',
-													_0: _user$project$Model$Nothing,
-													_1: {ctor: '[]'}
-												},
-												_1: {ctor: '[]'}
-											}
-										}
-									},
+									{ctor: '[]'},
+									{ctor: '[]'},
 									{ctor: '[]'}),
 								_1: {
 									ctor: '::',
 									_0: A8(
 										_user$project$Model$QuestionRecord,
-										203,
+										201,
 										'Choose your Race',
 										{
 											ctor: '::',
 											_0: '',
 											_1: {
 												ctor: '::',
-												_0: 'Races for Thief',
+												_0: 'Races for Ranger',
 												_1: {ctor: '[]'}
 											}
 										},
@@ -8912,10 +8873,10 @@ var _user$project$Model$initialModel = {
 										_user$project$Model$None,
 										{
 											ctor: '::',
-											_0: 'Human',
+											_0: 'Elf',
 											_1: {
 												ctor: '::',
-												_0: 'Halfling',
+												_0: 'Human',
 												_1: {ctor: '[]'}
 											}
 										},
@@ -8949,81 +8910,137 @@ var _user$project$Model$initialModel = {
 										ctor: '::',
 										_0: A8(
 											_user$project$Model$QuestionRecord,
-											301,
-											'Starting Gear',
+											202,
+											'Choose your Race',
 											{
 												ctor: '::',
-												_0: 'for the Ranger',
-												_1: {ctor: '[]'}
+												_0: '',
+												_1: {
+													ctor: '::',
+													_0: 'Races for Fighter',
+													_1: {ctor: '[]'}
+												}
 											},
-											_user$project$Model$CheckBox,
+											_user$project$Model$RadioButton,
 											_user$project$Model$None,
 											{
 												ctor: '::',
-												_0: 'banana1',
+												_0: 'Dwarf',
 												_1: {
 													ctor: '::',
-													_0: 'milkshake1',
+													_0: 'Elf',
 													_1: {
 														ctor: '::',
-														_0: 'float1',
+														_0: 'Human',
+														_1: {
+															ctor: '::',
+															_0: 'Halfling',
+															_1: {ctor: '[]'}
+														}
+													}
+												}
+											},
+											{
+												ctor: '::',
+												_0: {
+													ctor: '::',
+													_0: _user$project$Model$Nothing,
+													_1: {ctor: '[]'}
+												},
+												_1: {
+													ctor: '::',
+													_0: {
+														ctor: '::',
+														_0: _user$project$Model$Nothing,
+														_1: {ctor: '[]'}
+													},
+													_1: {
+														ctor: '::',
+														_0: {
+															ctor: '::',
+															_0: _user$project$Model$Nothing,
+															_1: {ctor: '[]'}
+														},
 														_1: {ctor: '[]'}
 													}
 												}
 											},
-											{ctor: '[]'},
 											{ctor: '[]'}),
 										_1: {
 											ctor: '::',
 											_0: A8(
 												_user$project$Model$QuestionRecord,
-												302,
-												'Starting Gear',
+												203,
+												'Choose your Race',
 												{
 													ctor: '::',
-													_0: 'for the Fighter, choose your armament:',
-													_1: {ctor: '[]'}
-												},
-												_user$project$Model$CheckBox,
-												_user$project$Model$None,
-												{
-													ctor: '::',
-													_0: 'Chainmail (1 armor, worn, 1 weight) and Adventuring Gear (5 uses, 1 weight)',
+													_0: '',
 													_1: {
 														ctor: '::',
-														_0: 'Scale Armor (2 armor, worn, clumsy, 3 weight)',
+														_0: 'Races for Thief',
 														_1: {ctor: '[]'}
 													}
 												},
-												{ctor: '[]'},
+												_user$project$Model$RadioButton,
+												_user$project$Model$None,
+												{
+													ctor: '::',
+													_0: 'Human',
+													_1: {
+														ctor: '::',
+														_0: 'Halfling',
+														_1: {ctor: '[]'}
+													}
+												},
+												{
+													ctor: '::',
+													_0: {
+														ctor: '::',
+														_0: _user$project$Model$Nothing,
+														_1: {ctor: '[]'}
+													},
+													_1: {
+														ctor: '::',
+														_0: {
+															ctor: '::',
+															_0: _user$project$Model$Nothing,
+															_1: {ctor: '[]'}
+														},
+														_1: {
+															ctor: '::',
+															_0: {
+																ctor: '::',
+																_0: _user$project$Model$Nothing,
+																_1: {ctor: '[]'}
+															},
+															_1: {ctor: '[]'}
+														}
+													}
+												},
 												{ctor: '[]'}),
 											_1: {
 												ctor: '::',
 												_0: A8(
 													_user$project$Model$QuestionRecord,
-													303,
+													301,
 													'Starting Gear',
 													{
 														ctor: '::',
-														_0: 'for the Theif, choose your weapon: (choose two)',
+														_0: 'for the Ranger',
 														_1: {ctor: '[]'}
 													},
 													_user$project$Model$CheckBox,
 													_user$project$Model$None,
 													{
 														ctor: '::',
-														_0: 'Dagger (hand, 1 weight), and Short Sword (close, 1 weight)',
+														_0: 'banana1',
 														_1: {
 															ctor: '::',
-															_0: 'Rapier (close, precise, 1 weight)',
+															_0: 'milkshake1',
 															_1: {
 																ctor: '::',
-																_0: 'Ragged Bow (near, 2 weight) and Bundle Of Arrows (3 ammo, 1 weight)',
-																_1: {
-																	ctor: '::',
-																	_0: '3 Throwing Daggers (thrown, near, 0 weight)',
-																	_1: {ctor: '[]'}
-																}
+																_0: 'float1',
+																_1: {ctor: '[]'}
 															}
 														}
 													},
@@ -9033,119 +9050,177 @@ var _user$project$Model$initialModel = {
 													ctor: '::',
 													_0: A8(
 														_user$project$Model$QuestionRecord,
-														110,
-														'Text Inut',
+														302,
+														'Starting Gear',
 														{
 															ctor: '::',
-															_0: 'desc',
+															_0: 'for the Fighter, choose your armament:',
+															_1: {ctor: '[]'}
+														},
+														_user$project$Model$CheckBox,
+														_user$project$Model$None,
+														{
+															ctor: '::',
+															_0: 'Chainmail (1 armor, worn, 1 weight) and Adventuring Gear (5 uses, 1 weight)',
 															_1: {
 																ctor: '::',
-																_0: 'placeholder :)',
+																_0: 'Scale Armor (2 armor, worn, clumsy, 3 weight)',
 																_1: {ctor: '[]'}
 															}
 														},
-														_user$project$Model$TextInput,
-														_user$project$Model$None,
-														{ctor: '[]'},
 														{ctor: '[]'},
 														{ctor: '[]'}),
 													_1: {
 														ctor: '::',
 														_0: A8(
 															_user$project$Model$QuestionRecord,
-															113,
-															'Radio',
+															303,
+															'Starting Gear',
 															{
 																ctor: '::',
-																_0: 'desc',
+																_0: 'for the Theif, choose your weapon: (choose two)',
 																_1: {ctor: '[]'}
 															},
-															_user$project$Model$RadioButton,
+															_user$project$Model$CheckBox,
 															_user$project$Model$None,
 															{
 																ctor: '::',
-																_0: 'banana',
+																_0: 'Dagger (hand, 1 weight), and Short Sword (close, 1 weight)',
 																_1: {
 																	ctor: '::',
-																	_0: 'milkshake',
+																	_0: 'Rapier (close, precise, 1 weight)',
 																	_1: {
 																		ctor: '::',
-																		_0: 'float',
-																		_1: {ctor: '[]'}
-																	}
-																}
-															},
-															{
-																ctor: '::',
-																_0: {
-																	ctor: '::',
-																	_0: _user$project$Model$AddQuestion(102),
-																	_1: {ctor: '[]'}
-																},
-																_1: {
-																	ctor: '::',
-																	_0: {
-																		ctor: '::',
-																		_0: _user$project$Model$Nothing,
-																		_1: {ctor: '[]'}
-																	},
-																	_1: {
-																		ctor: '::',
-																		_0: {
+																		_0: 'Ragged Bow (near, 2 weight) and Bundle Of Arrows (3 ammo, 1 weight)',
+																		_1: {
 																			ctor: '::',
-																			_0: _user$project$Model$RmQuestion(102),
+																			_0: '3 Throwing Daggers (thrown, near, 0 weight)',
 																			_1: {ctor: '[]'}
-																		},
-																		_1: {ctor: '[]'}
+																		}
 																	}
 																}
 															},
+															{ctor: '[]'},
 															{ctor: '[]'}),
 														_1: {
 															ctor: '::',
 															_0: A8(
 																_user$project$Model$QuestionRecord,
-																114,
-																'Check',
+																110,
+																'Text Inut',
 																{
 																	ctor: '::',
 																	_0: 'desc',
-																	_1: {ctor: '[]'}
-																},
-																_user$project$Model$CheckBox,
-																_user$project$Model$None,
-																{
-																	ctor: '::',
-																	_0: 'banana1',
 																	_1: {
 																		ctor: '::',
-																		_0: 'milkshake1',
-																		_1: {
-																			ctor: '::',
-																			_0: 'float1',
-																			_1: {ctor: '[]'}
-																		}
+																		_0: 'placeholder :)',
+																		_1: {ctor: '[]'}
 																	}
 																},
-																{
-																	ctor: '::',
-																	_0: {
+																_user$project$Model$TextInput,
+																_user$project$Model$None,
+																{ctor: '[]'},
+																{ctor: '[]'},
+																{ctor: '[]'}),
+															_1: {
+																ctor: '::',
+																_0: A8(
+																	_user$project$Model$QuestionRecord,
+																	113,
+																	'Radio',
+																	{
 																		ctor: '::',
-																		_0: _user$project$Model$AddQuestion(102),
+																		_0: 'desc',
 																		_1: {ctor: '[]'}
 																	},
-																	_1: {
+																	_user$project$Model$RadioButton,
+																	_user$project$Model$None,
+																	{
+																		ctor: '::',
+																		_0: 'banana',
+																		_1: {
+																			ctor: '::',
+																			_0: 'milkshake',
+																			_1: {
+																				ctor: '::',
+																				_0: 'float',
+																				_1: {ctor: '[]'}
+																			}
+																		}
+																	},
+																	{
 																		ctor: '::',
 																		_0: {
 																			ctor: '::',
-																			_0: _user$project$Model$RmQuestion(102),
+																			_0: _user$project$Model$AddQuestion(102),
 																			_1: {ctor: '[]'}
 																		},
-																		_1: {ctor: '[]'}
-																	}
-																},
-																{ctor: '[]'}),
-															_1: {ctor: '[]'}
+																		_1: {
+																			ctor: '::',
+																			_0: {
+																				ctor: '::',
+																				_0: _user$project$Model$Nothing,
+																				_1: {ctor: '[]'}
+																			},
+																			_1: {
+																				ctor: '::',
+																				_0: {
+																					ctor: '::',
+																					_0: _user$project$Model$RmQuestion(102),
+																					_1: {ctor: '[]'}
+																				},
+																				_1: {ctor: '[]'}
+																			}
+																		}
+																	},
+																	{ctor: '[]'}),
+																_1: {
+																	ctor: '::',
+																	_0: A8(
+																		_user$project$Model$QuestionRecord,
+																		114,
+																		'Check',
+																		{
+																			ctor: '::',
+																			_0: 'desc',
+																			_1: {ctor: '[]'}
+																		},
+																		_user$project$Model$CheckBox,
+																		_user$project$Model$None,
+																		{
+																			ctor: '::',
+																			_0: 'banana1',
+																			_1: {
+																				ctor: '::',
+																				_0: 'milkshake1',
+																				_1: {
+																					ctor: '::',
+																					_0: 'float1',
+																					_1: {ctor: '[]'}
+																				}
+																			}
+																		},
+																		{
+																			ctor: '::',
+																			_0: {
+																				ctor: '::',
+																				_0: _user$project$Model$AddQuestion(102),
+																				_1: {ctor: '[]'}
+																			},
+																			_1: {
+																				ctor: '::',
+																				_0: {
+																					ctor: '::',
+																					_0: _user$project$Model$RmQuestion(102),
+																					_1: {ctor: '[]'}
+																				},
+																				_1: {ctor: '[]'}
+																			}
+																		},
+																		{ctor: '[]'}),
+																	_1: {ctor: '[]'}
+																}
+															}
 														}
 													}
 												}
