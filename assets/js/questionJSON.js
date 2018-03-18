@@ -1,3 +1,3 @@
 ---
 ---
-var pages = JSON.stringify({{ site.data.quesitons | jsonify }} );
+var questions = JSON.stringify({{ site.data.quesitons | jsonify }} );
