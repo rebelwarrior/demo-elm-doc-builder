@@ -8484,7 +8484,7 @@ var _user$project$Model$thiefMarkdownText = '\n    Quiet as as ghosts they prowl
 var _user$project$Model$rangerMarkdownText = '\n    The trackers, scouts and hunters of the Seven Kingdoms, they can mostly be found on the fringes of civilization or in-between places. They have a connection with the land, few in civilized places do. \n    _\"Hear me. Never flee from a Ranger. Better to face them in battle immediately than to have them hunt you down...\"  - Stalwart Warrior_\n    ';
 var _user$project$Model$fighterMarkdownText = '\n    Warriors, soldiers, and the famed defenders of the realm while many know how to fight the _fighter_ class is a true warrior, trained, honed, capable. Many fighters in the Seven Kingdoms don\'t do it as a full-time, many are farmers, builders, craftmen but all have the strength to protect civilization.\n    _\"The spit and blood fill your mouth, dirt bites your eyes and yet, one simply does not give up.\" - King Rodus of Alaria_\n\n    ';
 var _user$project$Model$fighterMarkdownImage = '\n    ![fighter](https://pre00.deviantart.net/d6b9/th/pre/f/2011/272/7/2/branwen_the_deathdancer_by_grb76-d4b78yr.jpg)\n    <style> img{text-align: left; max-width:  400px; max-height: 350px; float: right;} </style>\n    ';
-var _user$project$Model$thiefMarkdownImage = '\n    ![thief](https://orig00.deviantart.net/c7c6/f/2013/301/2/1/once_a_thief_by_isbjorg-d6s41f8.jpg)\n    <style> img{text-align: left; max-width:  400px; max-height: 350px; float: right;} </style>\n    ';
+var _user$project$Model$thiefMarkdownImage = '\n    ![thief](https://pre00.deviantart.net/cf38/th/pre/f/2014/182/a/3/blackguard_by_i_guyjin_i-d7otvub.jpg)\n    <style> img{text-align: left; max-width:  400px; max-height: 350px; float: right;} </style>\n    ';
 var _user$project$Model$bardMarkdownImage = '\n    ![bard](https://pre00.deviantart.net/cc2b/th/pre/i/2015/292/7/1/minstrel_by_sagasketchbook-d9dngos.jpg)\n    <style> img{text-align: left; max-width:  400px; max-height: 350px; float: right;} </style>\n    ';
 var _user$project$Model$rangerMarkdownImage = '\n    ![ranger](https://pre00.deviantart.net/4227/th/pre/i/2014/139/0/6/ranger_by_greyhues-d7ixb51.jpg)\n    <style> img{text-align: left; max-width:  400px; max-height: 350px; float: right;} </style>\n    ';
 var _user$project$Model$questionDescription = function (record) {
@@ -8612,7 +8612,19 @@ var _user$project$Model$initialModel = {
 									_1: {
 										ctor: '::',
 										_0: _user$project$Model$RmQuestion(108),
-										_1: {ctor: '[]'}
+										_1: {
+											ctor: '::',
+											_0: _user$project$Model$RmQuestion(201),
+											_1: {
+												ctor: '::',
+												_0: _user$project$Model$RmQuestion(202),
+												_1: {
+													ctor: '::',
+													_0: _user$project$Model$RmQuestion(203),
+													_1: {ctor: '[]'}
+												}
+											}
+										}
 									}
 								}
 							}
@@ -10368,6 +10380,14 @@ var _user$project$Update$update = F2(
 			model,
 			msgs);
 	});
+var _user$project$Update$updateWithFlags = F2(
+	function (msgs, model) {
+		return {
+			ctor: '_Tuple2',
+			_0: A2(_user$project$Update$update, msgs, model),
+			_1: _elm_lang$core$Platform_Cmd$none
+		};
+	});
 var _user$project$Update$pullChildrenQuestions = F2(
 	function (qID, model) {
 		return A2(
@@ -10430,8 +10450,24 @@ var _user$project$Main$processFlags = function (flag) {
 var _user$project$Main$subscriptions = function (model) {
 	return _elm_lang$core$Platform_Sub$none;
 };
-var _user$project$Main$main = _elm_lang$html$Html$beginnerProgram(
-	{model: _user$project$Model$model, view: _user$project$View$view, update: _user$project$Update$update})();
+var _user$project$Main$main = _elm_lang$html$Html$programWithFlags(
+	{init: _user$project$Main$processFlags, update: _user$project$Update$updateWithFlags, subscriptions: _user$project$Main$subscriptions, view: _user$project$View$view})(
+	A2(
+		_elm_lang$core$Json_Decode$andThen,
+		function (l) {
+			return A2(
+				_elm_lang$core$Json_Decode$andThen,
+				function (q) {
+					return _elm_lang$core$Json_Decode$succeed(
+						{l: l, q: q});
+				},
+				A2(_elm_lang$core$Json_Decode$field, 'q', _elm_lang$core$Json_Decode$string));
+		},
+		A2(_elm_lang$core$Json_Decode$field, 'l', _elm_lang$core$Json_Decode$string)));
+var _user$project$Main$Flag = F2(
+	function (a, b) {
+		return {l: a, q: b};
+	});
 
 var Elm = {};
 Elm['Main'] = Elm['Main'] || {};
