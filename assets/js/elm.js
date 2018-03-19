@@ -9526,6 +9526,19 @@
 				return _user$project$RadioButtonBuilder$buildRadioButtonQuestion(questionRecord);
 			case 'TextInput':
 				return _user$project$TextInputBuilder$buildTextInputQuestion(questionRecord);
+			case 'SubHeading':
+				return A2(
+					_elm_lang$html$Html$div,
+					{
+						ctor: '::',
+						_0: _elm_lang$html$Html_Attributes$class('sub-heading'),
+						_1: { ctor: '[]' }
+					},
+					{
+						ctor: '::',
+						_0: _elm_lang$html$Html$text(questionRecord.title),
+						_1: { ctor: '[]' }
+					});
 			default:
 				return A2(
 					_elm_lang$html$Html$div,
