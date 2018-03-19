@@ -2,8 +2,11 @@
     {
         "uid": 101,
         "title": "",
-        "text" : ["_ranger image from devianart_"],
-        "type": "markdownblock",
+        "text" : [
+            "_ranger image from devianart_",
+            "     ![ranger](https://pre00.deviantart.net/4227/th/pre/i/2014/139/0/6/ranger_by_greyhues-d7ixb51.jpg)<style> img{text-align: left; max-width: 400px; max-height: 350px; float: right;} </style>"
+        ],
+        "type": "markdown",
         "saveAction": "",
         "options": [],
         "actions": [],
@@ -11,33 +14,181 @@
 
     },
     {
-        "uid": 1001,
-        "title": "Sample Title",
+        "uid": 102,
+        "title": "The Ranger",
+        "text": [
+            "__The Ranger__ The trackers, scouts and hunters of the Seven Kingdoms, they can mostly be found on the fringes of civilization or in-between places. They have a connection with the land, few in civilized places do. 
+    _'Hear me. Never flee from a Ranger. Better to face them in battle immediately than to have them hunt you down...'  - Stalwart Warrior_"
+        ],
+        "type": "markdown"
+
+    },
+    {
+        "uid": 103,
+        "title": "",
+        "text": [
+            "_fighter image from devianart_",
+            "    ![fighter](https://pre00.deviantart.net/d6b9/th/pre/f/2011/272/7/2/branwen_the_deathdancer_by_grb76-d4b78yr.jpg)
+    <style> img{text-align: left; max-width: 400px; max-height: 350px; float: right;
+            } </style>"       
+        ],
+        "type": "markdown",
+        "saveAction": "",
+        "options": [],
+        "actions": [],
+        "childQuestions": []
+    },
+    {
+        "uid": 104,
+        "title": "The Fighter",
+        "text": [
+            "__The Fighter__ Warriors, soldiers, and the famed defenders of the realm while many know how to fight the _fighter_ class is a true warrior, trained, honed, capable. Many fighters in the Seven Kingdoms don't do it as a full-time, many are farmers, builders, craftmen but all have the strength to protect civilization.
+    _'The spit and blood fill your mouth, dirt bites your eyes and yet, one simply does not give up.' - King Rodus of Alaria_
+"
+        ],
+        "type": "markdown"
+    },
+    {
+        "uid": 105,
+        "title": "",
+        "text": [
+            "_thief image from devianart_",
+            "    ![thief](https://pre00.deviantart.net/cf38/th/pre/f/2014/182/a/3/blackguard_by_i_guyjin_i-d7otvub.jpg)
+    <style> img{text-align: left; max-width: 400px; max-height: 350px; float: right;
+            } </style>"
+        ],
+        "type": "markdown",
+        "saveAction": "",
+        "options": [],
+        "actions": [],
+        "childQuestions": []
+    },
+    {
+        "uid": 106,
+        "title": "The Thief",
+        "text": [
+            "__The Thief__ Quiet as as ghosts they prowl, maybe working for a living is not for them, maybe it is proving their worth, or maybe this is all they know how to do. Why toil in life when so many good things are just ripe for the taking?
+    Caravans full of riches travel your land; maybe they should pay a toll for that, and why not you to collect it?
+    _'All adventures are thieves... just some are honest about it.' – Pathfinder_"
+
+        ],
+        "type": "markdown"
+    },
+    {
+        "uid": 100,
+        "title": "Choose Your Class",
+        "text": [],
         "type": "dropdown",
         "saveAction": "",
         "options": [
-            "PAN|American",
-            "SIN|Gringo"
+            "NONE|Please select one:",
+            "RNGR|Ranger",
+            "FTR|Fighter",
+            "THF|Thief"
         ],
         "actions": [
             [
                 {
-                    "action": "AddQuestion",
-                    "number": 1002
+                    "action": "RemoveQuestion",
+                    "number": 101
                 },
                 {
                     "action": "RemoveQuestion",
-                    "number": 1003
+                    "number": 102
+                },
+                {
+                    "action": "RemoveQuestion",
+                    "number": 103
+                },
+                {
+                    "action": "RemoveQuestion",
+                    "number": 104
+                },
+                {
+                    "action": "RemoveQuestion",
+                    "number": 105
+                },
+                {
+                    "action": "RemoveQuestion",
+                    "number": 106
+                }
+            ],
+            [
+                {
+                    "action": "AddQuestion",
+                    "number": 101
+                },
+                {
+                    "action": "AddQuestion",
+                    "number": 102
+                },
+                {
+                    "action": "RemoveQuestion",
+                    "number": 103
+                },
+                {
+                    "action": "RemoveQuestion",
+                    "number": 104
+                },
+                {
+                    "action": "RemoveQuestion",
+                    "number": 105
+                },
+                {
+                    "action": "RemoveQuestion",
+                    "number": 106
                 }
             ],
             [
                 {
                     "action": "RemoveQuestion",
-                    "number": 1002
+                    "number": 101
+                },
+                {
+                    "action": "RemoveQuestion",
+                    "number": 102
                 },
                 {
                     "action": "AddQuestion",
-                    "number": 1003
+                    "number": 103
+                },
+                {
+                    "action": "AddQuestion",
+                    "number": 104
+                },
+                {
+                    "action": "RemoveQuestion",
+                    "number": 105
+                },
+                {
+                    "action": "RemoveQuestion",
+                    "number": 106
+                }
+            ],
+            [
+                {
+                    "action": "RemoveQuestion",
+                    "number": 101
+                },
+                {
+                    "action": "RemoveQuestion",
+                    "number": 102
+                },
+                {
+                    "action": "RemoveQuestion",
+                    "number": 103
+                },
+                {
+                    "action": "RemoveQuestion",
+                    "number": 104
+                },
+                {
+                    "action": "AddQuestion",
+                    "number": 105
+                },
+                {
+                    "action": "AddQuestion",
+                    "number": 106
                 }
             ]
         ],
