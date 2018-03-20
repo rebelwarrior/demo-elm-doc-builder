@@ -115,6 +115,14 @@
             ],
             [
                 {
+                    "action": "RemoveQuestion",
+                    "number": 101
+                },
+                {
+                    "action": "RemoveQuestion",
+                    "number": 102
+                },
+                {
                     "action": "AddQuestion",
                     "number": 101
                 },
