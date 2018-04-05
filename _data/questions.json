@@ -82,9 +82,15 @@
         "saveAction": "",
         "options": [
             "NONE|Please select one:",
-            "RNGR|Ranger",
+            "BAR|Barbarian",
+            "BRD|Bard",
+            "CLR|Cleric",
+            "DRD|Druid",
             "FTR|Fighter",
-            "THF|Thief"
+            "PAL|Paladin",
+            "RGR|Ranger",
+            "THF|Thief",
+            "WIZ|Wizard"
         ],
         "actions": [
             [
@@ -210,7 +216,7 @@
         "uid": 200,
         "title": "Choose Your Race",
         "text": ["Of what were you born?"],
-        "type": "radiobutton",
+        "type": "radio",
         "saveAction": "",
         "options": [
             "elf",
