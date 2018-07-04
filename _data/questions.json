@@ -75,6 +75,90 @@
         "type": "markdown"
     },
     {
+        "uid": 107,
+        "title": "",
+        "text": [
+            "_bard image from devianart_",
+            "    ![bard](https://pre00.deviantart.net/cc2b/th/pre/i/2015/292/7/1/minstrel_by_sagasketchbook-d9dngos.jpg)<style> img{text-align: left; max-width: 400px; max-height: 350px; float: right;} </style>"
+        ],
+        "type": "markdown",
+        "saveAction": "",
+        "options": [],
+        "actions": [],
+        "childQuestions": []
+    },
+    {
+        "uid": 108,
+        "title": "The Bard",
+        "text": [
+            "Bards study a magic born of nature's music.  **Arcane Art's** effects don't stack with multiple singing, for example a single bard can't give more that one +1d4 forward to damage to a single ally. In the case of healing once an ally has been healed they can't be healed again until their HP change either by taking more damage or by additional healing of another kind or source.  Arcane Art's effect from another bard is considered from a separate source and handled independently and thus may stack."
+        ],
+        "type": "markdown"
+    },
+    {
+        "uid": 109,
+        "title": "",
+        "text": [
+            "_barbarian image from devianart_",
+            "    ![barbarian](https://orig00.deviantart.net/4981/f/2014/344/2/9/barbarian_by_accantis-d5x8y2j.jpg)<style> img{text-align: left; max-width: 400px; max-height: 350px; float: right;} </style>"
+        ],
+        "type": "markdown",
+        "saveAction": "",
+        "options": [],
+        "actions": [],
+        "childQuestions": []
+    },
+    {
+        "uid": 110,
+        "title": "The Barbarian",
+        "text": [
+            "Since time immemorial civilized people have slept with one eye open on the horizon, fearing that their barbarian brethren may awaken, unite and attack with the ferociousness of the wilds they inhabit."
+        ],
+        "type": "markdown"
+    },
+    {
+        "uid": 111,
+        "title": "",
+        "text": [
+            "_wizard image from [devianart](https://jedi-art-trick.deviantart.com/art/Black-Mage-289949816)_",
+            "    ![wizard](https://img00.deviantart.net/d658/i/2012/072/8/3/black_mage_by_jedi_art_trick-d4smmpk.jpg)<style> img{text-align: left; max-width: 400px; max-height: 350px; float: right;} </style>"
+        ],
+        "type": "markdown",
+        "saveAction": "",
+        "options": [],
+        "actions": [],
+        "childQuestions": []
+    },
+    {
+        "uid": 112,
+        "title": "The Wizard",
+        "text": [
+            "They cover their faces and identities to protect their families. It can be hard to tell if they are female or male.  'I don't much like them, but they come in handy in a pinch.' -- Captain Friggard."
+        ],
+        "type": "markdown"
+    },
+    {
+        "uid": 113,
+        "title": "",
+        "text": [
+            "_paladin image from [devianart](https://sirtiefling.deviantart.com/art/Tamisen-the-Paladin-416332905)_",
+            "    ![paladin](https://orig00.deviantart.net/6a61/f/2013/331/d/d/tamisen_the_paladin_by_sirtiefling-d6vvgix.jpg)<style> img{text-align: left; max-width: 400px; max-height: 350px; float: right;} </style>"
+        ],
+        "type": "markdown",
+        "saveAction": "",
+        "options": [],
+        "actions": [],
+        "childQuestions": []
+    },
+    {
+        "uid": 114,
+        "title": "The Paladin",
+        "text": [
+            ""
+        ],
+        "type": "markdown"
+    },
+    {
         "uid": 100,
         "title": "Choose Your Class",
         "text": [],
@@ -117,70 +201,38 @@
                 {
                     "action": "RemoveQuestion",
                     "number": 106
-                }
-            ],
-            [
-                {
-                    "action": "RemoveQuestion",
-                    "number": 101
                 },
                 {
                     "action": "RemoveQuestion",
-                    "number": 102
-                },
-                {
-                    "action": "AddQuestion",
-                    "number": 101
-                },
-                {
-                    "action": "AddQuestion",
-                    "number": 102
+                    "number": 107
                 },
                 {
                     "action": "RemoveQuestion",
-                    "number": 103
+                    "number": 108
                 },
                 {
                     "action": "RemoveQuestion",
-                    "number": 104
+                    "number": 109
                 },
                 {
                     "action": "RemoveQuestion",
-                    "number": 105
+                    "number": 110
                 },
                 {
                     "action": "RemoveQuestion",
-                    "number": 106
-                }
-            ],
-            [
-                {
-                    "action": "RemoveQuestion",
-                    "number": 101
+                    "number": 111
                 },
                 {
                     "action": "RemoveQuestion",
-                    "number": 102
-                },
-                                {
-                    "action": "RemoveQuestion",
-                    "number": 103
-                },
-                {
-                    "action": "AddQuestion",
-                    "number": 103
-                },
-                {
-                    "action": "AddQuestion",
-                    "number": 104
+                    "number": 112
                 },
                 {
                     "action": "RemoveQuestion",
-                    "number": 105
+                    "number": 113
                 },
                 {
                     "action": "RemoveQuestion",
-                    "number": 106
+                    "number": 114
                 }
             ],
             [
@@ -201,12 +253,332 @@
                     "number": 104
                 },
                 {
-                    "action": "AddQuestion",
+                    "action": "RemoveQuestion",
                     "number": 105
                 },
                 {
-                    "action": "AddQuestion",
+                    "action": "RemoveQuestion",
                     "number": 106
+                },
+                {
+                    "action": "RemoveQuestion",
+                    "number": 107
+                },
+                {
+                    "action": "RemoveQuestion",
+                    "number": 108
+                },
+                {
+                    "action": "AddQuestionBelow",
+                    "number": 109,
+                    "below": 100
+                },
+                {
+                    "action": "AddQuestionBelow",
+                    "number": 110,
+                    "below": 109
+                }
+            ],
+            [
+                {
+                    "action": "RemoveQuestion",
+                    "number": 101
+                },
+                {
+                    "action": "RemoveQuestion",
+                    "number": 102
+                },
+                {
+                    "action": "RemoveQuestion",
+                    "number": 103
+                },
+                {
+                    "action": "RemoveQuestion",
+                    "number": 104
+                },
+                {
+                    "action": "RemoveQuestion",
+                    "number": 105
+                },
+                {
+                    "action": "RemoveQuestion",
+                    "number": 106
+                },
+                {
+                    "action": "AddQuestionBelow",
+                    "number": 107,
+                    "below": 100
+                },
+                {
+                    "action": "AddQuestionBelow",
+                    "number": 108,
+                    "below": 107
+                },
+                {
+                    "action": "RemoveQuestion",
+                    "number": 109
+                },
+                {
+                    "action": "RemoveQuestion",
+                    "number": 110
+                },
+                {
+                    "action": "RemoveQuestion",
+                    "number": 111
+                },
+                {
+                    "action": "RemoveQuestion",
+                    "number": 112
+                }
+            ],
+            [],
+            [],
+            [
+                {
+                    "action": "RemoveQuestion",
+                    "number": 101
+                },
+                {
+                    "action": "RemoveQuestion",
+                    "number": 102
+                },
+                {
+                    "action": "RemoveQuestion",
+                    "number": 103
+                },
+                {
+                    "action": "AddQuestionBelow",
+                    "number": 103,
+                    "below": 100
+                },
+                {
+                    "action": "AddQuestionBelow",
+                    "number": 104,
+                    "below": 100
+                },
+                {
+                    "action": "RemoveQuestion",
+                    "number": 105
+                },
+                {
+                    "action": "RemoveQuestion",
+                    "number": 106
+                },
+                {
+                    "action": "RemoveQuestion",
+                    "number": 107
+                },
+                {
+                    "action": "RemoveQuestion",
+                    "number": 108
+                }
+            ],
+            [
+                {
+                    "action": "RemoveQuestion",
+                    "number": 101
+                },
+                {
+                    "action": "RemoveQuestion",
+                    "number": 102
+                },
+                {
+                    "action": "RemoveQuestion",
+                    "number": 103
+                },
+                {
+                    "action": "RemoveQuestion",
+                    "number": 104
+                },
+                {
+                    "action": "RemoveQuestion",
+                    "number": 105
+                },
+                {
+                    "action": "RemoveQuestion",
+                    "number": 106
+                },
+                {
+                    "action": "RemoveQuestion",
+                    "number": 107
+                },
+                {
+                    "action": "RemoveQuestion",
+                    "number": 108
+                },
+                {
+                    "action": "RemoveQuestion",
+                    "number": 109
+                },
+                {
+                    "action": "RemoveQuestion",
+                    "number": 110
+                },
+                {
+                    "action": "RemoveQuestion",
+                    "number": 111
+                },
+                {
+                    "action": "RemoveQuestion",
+                    "number": 112
+                },
+                {
+                    "action": "RemoveQuestion",
+                    "number": 113
+                },
+                {
+                    "action": "RemoveQuestion",
+                    "number": 114
+                },
+                {
+                    "action": "AddQuestionBelow",
+                    "number": 113,
+                    "below": 100
+                },
+                {
+                    "action": "AddQuestionBelow",
+                    "number": 114,
+                    "below": 113
+                }
+            ],
+            [
+                {
+                    "action": "RemoveQuestion",
+                    "number": 101
+                },
+                {
+                    "action": "RemoveQuestion",
+                    "number": 102
+                },
+                {
+                    "action": "AddQuestionBelow",
+                    "number": 101,
+                    "below": 100
+                },
+                {
+                    "action": "AddQuestionBelow",
+                    "number": 102,
+                    "below": 100
+                },
+                {
+                    "action": "RemoveQuestion",
+                    "number": 103
+                },
+                {
+                    "action": "RemoveQuestion",
+                    "number": 104
+                },
+                {
+                    "action": "RemoveQuestion",
+                    "number": 105
+                },
+                {
+                    "action": "RemoveQuestion",
+                    "number": 106
+                },
+                {
+                    "action": "RemoveQuestion",
+                    "number": 107
+                },
+                {
+                    "action": "RemoveQuestion",
+                    "number": 108
+                }
+            ],
+            [
+                {
+                    "action": "RemoveQuestion",
+                    "number": 101
+                },
+                {
+                    "action": "RemoveQuestion",
+                    "number": 102
+                },
+                {
+                    "action": "RemoveQuestion",
+                    "number": 103
+                },
+                {
+                    "action": "RemoveQuestion",
+                    "number": 104
+                },
+                {
+                    "action": "AddQuestionBelow",
+                    "number": 105,
+                    "below": 100
+                },
+                {
+                    "action": "AddQuestionBelow",
+                    "number": 106,
+                    "below": 100
+                },
+                {
+                    "action": "RemoveQuestion",
+                    "number": 107
+                },
+                {
+                    "action": "RemoveQuestion",
+                    "number": 108
+                }
+            ],
+            [
+                {
+                    "action": "RemoveQuestion",
+                    "number": 101
+                },
+                {
+                    "action": "RemoveQuestion",
+                    "number": 102
+                },
+                {
+                    "action": "RemoveQuestion",
+                    "number": 103
+                },
+                {
+                    "action": "RemoveQuestion",
+                    "number": 104
+                },
+                {
+                    "action": "RemoveQuestion",
+                    "number": 105
+                },
+                {
+                    "action": "RemoveQuestion",
+                    "number": 106
+                },
+                {
+                    "action": "RemoveQuestion",
+                    "number": 107
+                },
+                {
+                    "action": "RemoveQuestion",
+                    "number": 108
+                },
+                {
+                    "action": "RemoveQuestion",
+                    "number": 109
+                },
+                {
+                    "action": "RemoveQuestion",
+                    "number": 110
+                },
+                {
+                    "action": "RemoveQuestion",
+                    "number": 111
+                },
+                {
+                    "action": "RemoveQuestion",
+                    "number": 112
+                },
+                {
+                    "action": "AddQuestionBelow",
+                    "number": 111,
+                    "below": 100
+                },
+                {
+                    "action": "AddQuestionBelow",
+                    "number": 112,
+                    "below": 111
                 }
             ]
         ],
@@ -223,50 +595,7 @@
             "human",
             "half-elf"
         ],
-        "actions": [
-            [
-                {
-                    "action": "AddQuestion",
-                    "number": 301
-                },
-                {
-                    "action": "RemoveQuestion",
-                    "number": 302
-                },
-                {
-                    "action": "RemoveQuestion",
-                    "number": 303
-                }
-            ],
-            [
-                {
-                    "action": "AddQuestion",
-                    "number": 302
-                },
-                {
-                    "action": "RemoveQuestion",
-                    "number": 301
-                },
-                {
-                    "action": "RemoveQuestion",
-                    "number": 303
-                }
-            ],
-            [
-                {
-                    "action": "AddQuestion",
-                    "number": 303
-                },
-                {
-                    "action": "RemoveQuestion",
-                    "number": 302
-                },
-                {
-                    "action": "RemoveQuestion",
-                    "number": 301
-                }
-            ]
-        ],
+        "actions": [],
         "childQuestions": []
     },
     {
