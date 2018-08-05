@@ -165,16 +165,16 @@
         "type": "dropdown",
         "saveAction": "",
         "options": [
-            "NONE|Please select one:",
-            "BAR|Barbarian",
-            "BRD|Bard",
-            "CLR|Cleric",
-            "DRD|Druid",
-            "FTR|Fighter",
-            "PAL|Paladin",
-            "RGR|Ranger",
-            "THF|Thief",
-            "WIZ|Wizard"
+            "Please select one:",
+            "Barbarian",
+            "Bard",
+            "Cleric",
+            "Druid",
+            "Fighter",
+            "Paladin",
+            "Ranger",
+            "Thief",
+            "Wizard"
         ],
         "actions": [
             [
