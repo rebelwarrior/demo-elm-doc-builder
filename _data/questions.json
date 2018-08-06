@@ -1,123 +1,49 @@
 [
-    {
-        "uid": 101,
-        "title": "",
-        "text" : [
-            "_ranger image from devianart_",
-            "     ![ranger](https://pre00.deviantart.net/4227/th/pre/i/2014/139/0/6/ranger_by_greyhues-d7ixb51.jpg)<style> img{text-align: left; max-width: 400px; max-height: 350px; float: right;} </style>"
-        ],
-        "type": "markdown",
-        "saveAction": "",
-        "options": [],
-        "actions": [],
-        "childQuestions": []
 
-    },
     {
         "uid": 102,
-        "title": "The Ranger",
-        "text": [
-            "__The Ranger__ The trackers, scouts and hunters of the Seven Kingdoms, they can mostly be found on the fringes of civilization or in-between places. They have a connection with the land, few in civilized places do. 
-    _'Hear me. Never flee from a Ranger. Better to face them in battle immediately than to have them hunt you down...'  - Stalwart Warrior_"
-        ],
-        "type": "markdown"
-
-    },
-    {
-        "uid": 103,
         "title": "",
         "text": [
             "_fighter image from devianart_",
-            "    ![fighter](https://pre00.deviantart.net/d6b9/th/pre/f/2011/272/7/2/branwen_the_deathdancer_by_grb76-d4b78yr.jpg)
-    <style> img{text-align: left; max-width: 400px; max-height: 350px; float: right;
-            } </style>"       
+            "    ![fighter](https://pre00.deviantart.net/d6b9/th/pre/f/2011/272/7/2/branwen_the_deathdancer_by_grb76-d4b78yr.jpg) <style> img{text-align: left; max-width: 400px; max-height: 350px; float: right;} </style>"       
         ],
         "type": "markdown",
         "saveAction": "",
         "options": [],
         "actions": [],
         "childQuestions": []
+    },
+    {
+        "uid": 101,
+        "title": "The Fighter",
+        "text": [
+            "__The Fighter__ Warriors, soldiers, and the famed defenders of the realm while many know how to fight the _fighter_ class is a true warrior, trained, honed, capable. Many fighters in the Seven Kingdoms don't do it as a full-time, many are farmers, builders, craftmen but all have the strength to protect civilization. _'The spit and blood fill your mouth, dirt bites your eyes and yet, one simply does not give up.' - King Rodus of Alaria_"
+        ],
+        "type": "markdown"
     },
     {
         "uid": 104,
-        "title": "The Fighter",
-        "text": [
-            "__The Fighter__ Warriors, soldiers, and the famed defenders of the realm while many know how to fight the _fighter_ class is a true warrior, trained, honed, capable. Many fighters in the Seven Kingdoms don't do it as a full-time, many are farmers, builders, craftmen but all have the strength to protect civilization.
-    _'The spit and blood fill your mouth, dirt bites your eyes and yet, one simply does not give up.' - King Rodus of Alaria_
-"
-        ],
-        "type": "markdown"
-    },
-    {
-        "uid": 105,
         "title": "",
         "text": [
             "_thief image from devianart_",
-            "    ![thief](https://pre00.deviantart.net/cf38/th/pre/f/2014/182/a/3/blackguard_by_i_guyjin_i-d7otvub.jpg)
-    <style> img{text-align: left; max-width: 400px; max-height: 350px; float: right;
-            } </style>"
+            "    ![thief](https://pre00.deviantart.net/cf38/th/pre/f/2014/182/a/3/blackguard_by_i_guyjin_i-d7otvub.jpg) <style> img{text-align: left; max-width: 400px; max-height: 350px; float: right;} </style>"
         ],
         "type": "markdown",
         "saveAction": "",
         "options": [],
         "actions": [],
         "childQuestions": []
+    },
+    {
+        "uid": 103,
+        "title": "The Thief",
+        "text": [
+            "__The Thief__ Quiet as as ghosts they prowl, maybe working for a living is not for them, maybe it is proving their worth, or maybe this is all they know how to do. Why toil in life when so many good things are just ripe for the taking? Caravans full of riches travel your land; maybe they should pay a toll for that, and why not you to collect it? _'All adventures are thieves... just some are honest about it.' – Pathfinder_"
+        ],
+        "type": "markdown"
     },
     {
         "uid": 106,
-        "title": "The Thief",
-        "text": [
-            "__The Thief__ Quiet as as ghosts they prowl, maybe working for a living is not for them, maybe it is proving their worth, or maybe this is all they know how to do. Why toil in life when so many good things are just ripe for the taking?
-    Caravans full of riches travel your land; maybe they should pay a toll for that, and why not you to collect it?
-    _'All adventures are thieves... just some are honest about it.' – Pathfinder_"
-
-        ],
-        "type": "markdown"
-    },
-    {
-        "uid": 107,
-        "title": "",
-        "text": [
-            "_bard image from devianart_",
-            "    ![bard](https://pre00.deviantart.net/cc2b/th/pre/i/2015/292/7/1/minstrel_by_sagasketchbook-d9dngos.jpg)<style> img{text-align: left; max-width: 400px; max-height: 350px; float: right;} </style>"
-        ],
-        "type": "markdown",
-        "saveAction": "",
-        "options": [],
-        "actions": [],
-        "childQuestions": []
-    },
-    {
-        "uid": 108,
-        "title": "The Bard",
-        "text": [
-            "Bards study a magic born of nature's music.  **Arcane Art's** effects don't stack with multiple singing, for example a single bard can't give more that one +1d4 forward to damage to a single ally. In the case of healing once an ally has been healed they can't be healed again until their HP change either by taking more damage or by additional healing of another kind or source.  Arcane Art's effect from another bard is considered from a separate source and handled independently and thus may stack."
-        ],
-        "type": "markdown"
-    },
-    {
-        "uid": 109,
-        "title": "",
-        "text": [
-            "_barbarian image from devianart_",
-            "    ![barbarian](https://orig00.deviantart.net/4981/f/2014/344/2/9/barbarian_by_accantis-d5x8y2j.jpg)<style> img{text-align: left; max-width: 400px; max-height: 350px; float: right;} </style>"
-        ],
-        "type": "markdown",
-        "saveAction": "",
-        "options": [],
-        "actions": [],
-        "childQuestions": []
-    },
-    {
-        "uid": 110,
-        "title": "The Barbarian",
-        "text": [
-            "Since time immemorial civilized people have slept with one eye open on the horizon, fearing that their barbarian brethren may awaken, unite and attack with the ferociousness of the wilds they inhabit."
-        ],
-        "type": "markdown"
-    },
-    {
-        "uid": 111,
         "title": "",
         "text": [
             "_wizard image from [devianart](https://jedi-art-trick.deviantart.com/art/Black-Mage-289949816)_",
@@ -130,7 +56,7 @@
         "childQuestions": []
     },
     {
-        "uid": 112,
+        "uid": 105,
         "title": "The Wizard",
         "text": [
             "They cover their faces and identities to protect their families. It can be hard to tell if they are female or male.  'I don't much like them, but they come in handy in a pinch.' -- Captain Friggard."
@@ -138,11 +64,11 @@
         "type": "markdown"
     },
     {
-        "uid": 113,
+        "uid": 108,
         "title": "",
         "text": [
-            "_paladin image from [devianart](https://sirtiefling.deviantart.com/art/Tamisen-the-Paladin-416332905)_",
-            "    ![paladin](https://orig00.deviantart.net/6a61/f/2013/331/d/d/tamisen_the_paladin_by_sirtiefling-d6vvgix.jpg)<style> img{text-align: left; max-width: 400px; max-height: 350px; float: right;} </style>"
+            "_cleric image from [devianart](https://www.deviantart.com/asphillipsart/art/Concept-Cleric-of-Sarenrae-In-Training-675329529)_",
+            "    ![cleric](https://pre00.deviantart.net/c842/th/pre/f/2017/106/a/1/concept__cleric_of_sarenrae_in_training_by_asphillipsart-db62nll.png)<style> img{text-align: left; max-width: 400px; max-height: 350px; float: right;} </style>"
         ],
         "type": "markdown",
         "saveAction": "",
@@ -151,10 +77,10 @@
         "childQuestions": []
     },
     {
-        "uid": 114,
-        "title": "The Paladin",
+        "uid": 107,
+        "title": "The Cleric",
         "text": [
-            ""
+            "desc. cleric"
         ],
         "type": "markdown"
     },
@@ -166,13 +92,8 @@
         "saveAction": "",
         "options": [
             "Please select one:",
-            "Barbarian",
-            "Bard",
             "Cleric",
-            "Druid",
             "Fighter",
-            "Paladin",
-            "Ranger",
             "Thief",
             "Wizard"
         ],
@@ -270,13 +191,13 @@
                 },
                 {
                     "action": "AddQuestionBelow",
-                    "number": 109,
+                    "number": 107,
                     "below": 100
                 },
                 {
                     "action": "AddQuestionBelow",
-                    "number": 110,
-                    "below": 109
+                    "number": 108,
+                    "below": 107
                 }
             ],
             [
@@ -287,6 +208,16 @@
                 {
                     "action": "RemoveQuestion",
                     "number": 102
+                },
+                {
+                    "action": "AddQuestionBelow",
+                    "number": 102,
+                    "below": 100
+                },
+                {
+                    "action": "AddQuestionBelow",
+                    "number": 101,
+                    "below": 102
                 },
                 {
                     "action": "RemoveQuestion",
@@ -305,14 +236,12 @@
                     "number": 106
                 },
                 {
-                    "action": "AddQuestionBelow",
-                    "number": 107,
-                    "below": 100
+                    "action": "RemoveQuestion",
+                    "number": 107
                 },
                 {
-                    "action": "AddQuestionBelow",
-                    "number": 108,
-                    "below": 107
+                    "action": "RemoveQuestion",
+                    "number": 108
                 },
                 {
                     "action": "RemoveQuestion",
@@ -331,8 +260,6 @@
                     "number": 112
                 }
             ],
-            [],
-            [],
             [
                 {
                     "action": "RemoveQuestion",
@@ -345,6 +272,10 @@
                 {
                     "action": "RemoveQuestion",
                     "number": 103
+                },
+                {
+                    "action": "RemoveQuestion",
+                    "number": 104
                 },
                 {
                     "action": "AddQuestionBelow",
@@ -432,153 +363,13 @@
                 },
                 {
                     "action": "AddQuestionBelow",
-                    "number": 113,
-                    "below": 100
-                },
-                {
-                    "action": "AddQuestionBelow",
-                    "number": 114,
-                    "below": 113
-                }
-            ],
-            [
-                {
-                    "action": "RemoveQuestion",
-                    "number": 101
-                },
-                {
-                    "action": "RemoveQuestion",
-                    "number": 102
-                },
-                {
-                    "action": "AddQuestionBelow",
-                    "number": 101,
-                    "below": 100
-                },
-                {
-                    "action": "AddQuestionBelow",
-                    "number": 102,
-                    "below": 100
-                },
-                {
-                    "action": "RemoveQuestion",
-                    "number": 103
-                },
-                {
-                    "action": "RemoveQuestion",
-                    "number": 104
-                },
-                {
-                    "action": "RemoveQuestion",
-                    "number": 105
-                },
-                {
-                    "action": "RemoveQuestion",
-                    "number": 106
-                },
-                {
-                    "action": "RemoveQuestion",
-                    "number": 107
-                },
-                {
-                    "action": "RemoveQuestion",
-                    "number": 108
-                }
-            ],
-            [
-                {
-                    "action": "RemoveQuestion",
-                    "number": 101
-                },
-                {
-                    "action": "RemoveQuestion",
-                    "number": 102
-                },
-                {
-                    "action": "RemoveQuestion",
-                    "number": 103
-                },
-                {
-                    "action": "RemoveQuestion",
-                    "number": 104
-                },
-                {
-                    "action": "AddQuestionBelow",
-                    "number": 105,
-                    "below": 100
-                },
-                {
-                    "action": "AddQuestionBelow",
                     "number": 106,
                     "below": 100
                 },
                 {
-                    "action": "RemoveQuestion",
-                    "number": 107
-                },
-                {
-                    "action": "RemoveQuestion",
-                    "number": 108
-                }
-            ],
-            [
-                {
-                    "action": "RemoveQuestion",
-                    "number": 101
-                },
-                {
-                    "action": "RemoveQuestion",
-                    "number": 102
-                },
-                {
-                    "action": "RemoveQuestion",
-                    "number": 103
-                },
-                {
-                    "action": "RemoveQuestion",
-                    "number": 104
-                },
-                {
-                    "action": "RemoveQuestion",
-                    "number": 105
-                },
-                {
-                    "action": "RemoveQuestion",
-                    "number": 106
-                },
-                {
-                    "action": "RemoveQuestion",
-                    "number": 107
-                },
-                {
-                    "action": "RemoveQuestion",
-                    "number": 108
-                },
-                {
-                    "action": "RemoveQuestion",
-                    "number": 109
-                },
-                {
-                    "action": "RemoveQuestion",
-                    "number": 110
-                },
-                {
-                    "action": "RemoveQuestion",
-                    "number": 111
-                },
-                {
-                    "action": "RemoveQuestion",
-                    "number": 112
-                },
-                {
                     "action": "AddQuestionBelow",
-                    "number": 111,
-                    "below": 100
-                },
-                {
-                    "action": "AddQuestionBelow",
-                    "number": 112,
-                    "below": 111
+                    "number": 105,
+                    "below": 106
                 }
             ]
         ],
@@ -631,6 +422,25 @@
         "actions": [
 
         ],
+        "childQuestions": []
+    },
+    {
+        "uid": 10000,
+        "title": "Set your Abilities",
+        "text": [
+            "Your Abilities determine your bonuses"
+        ],
+        "type": "table",
+        "saveAction": "",
+        "options": [
+            "Str",
+            "Dex",
+            "Con",
+            "Int",
+            "Wis",
+            "Cha"
+        ],
+        "actions": [],
         "childQuestions": []
     }
 ]
