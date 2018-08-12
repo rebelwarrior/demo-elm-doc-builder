@@ -382,11 +382,58 @@
         "type": "radio",
         "saveAction": "",
         "options": [
-            "elf",
             "human",
-            "half-elf"
+            "half-elf",
+            "elf"
         ],
-        "actions": [],
+        "actions": [
+            [
+                {
+                    "action": "AddQuestionBelow",
+                    "number": 302,
+                    "below": 200
+                },
+                {
+                    "action": "RemoveQuestion",
+                    "number": 303
+                },
+                {
+                    "action": "RemoveQuestion",
+                    "number": 301
+                }
+            ],
+            [
+                {
+                    "action": "AddQuestionBelow",
+                    "number": 303,
+                    "below": 200
+                },
+                {
+                    "action": "RemoveQuestion",
+                    "number": 302
+                },
+                {
+                    "action": "RemoveQuestion",
+                    "number": 301
+                }
+            ],
+            [
+                {
+                    "action": "AddQuestionBelow",
+                    "number": 301,
+                    "below": 200
+                },
+                {
+                    "action": "RemoveQuestion",
+                    "number": 302
+                },
+                {
+                    "action": "RemoveQuestion",
+                    "number": 303
+                }
+            ]
+
+        ],
         "childQuestions": []
     },
     {
@@ -407,6 +454,29 @@
         "title": "The Half-Elf",
         "text": [],
         "type": "subheading"
+    },
+    {
+        "uid": 401,
+        "title": "Background",
+        "text": [],
+        "type": "subheading"
+    },
+    {
+        "uid": 10,
+        "title": "Print",
+        "text": ["click to get print view"],
+        "type": "button",
+        "saveAction": "SaveAll",
+        "actions" : []
+    },
+    {
+        "uid": 400,
+        "title": "Background",
+        "text": [
+            "Enter your character's story."
+        ],
+        "type": "textbox",
+        "actions": []
     },
     {
         "uid": 300,
