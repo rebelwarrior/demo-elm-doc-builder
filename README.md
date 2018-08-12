@@ -12,3 +12,6 @@ TODO:
 use gem locally and jekyll-assets to build locally. 
 
 make sure json schema is up to date.
+
+Text © David Acevedo
+Images copyrighted by their respective creators.
