@@ -83,7 +83,7 @@
         "uid": 107,
         "title": "The Cleric",
         "text": [
-            "desc. cleric"
+            "Called from the inside, you don't choose to be a cleric, you are chosen. Chosen to lead the path into darkness with your divine light. To commune with forces beyond this bitter earth, to heal the broken, to fix the world, to release the undead into the next world. Your strength comes not from muscles, but from an inner place; a place of solace; a place the dark fears."
         ],
         "type": "markdown",
         "saveAction": "SaveAll"
@@ -195,13 +195,13 @@
                 },
                 {
                     "action": "AddQuestionBelow",
-                    "number": 107,
+                    "number": 108,
                     "below": 100
                 },
                 {
                     "action": "AddQuestionBelow",
-                    "number": 108,
-                    "below": 107
+                    "number": 107,
+                    "below": 108
                 }
             ],
             [
@@ -487,7 +487,7 @@
             "Enter your character's story."
         ],
         "type": "textbox",
-        "saveAction": "SaveAll",
+        "saveAction": "SaveText",
         "actions": []
     },
     {

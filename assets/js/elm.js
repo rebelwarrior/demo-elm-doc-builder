@@ -10138,10 +10138,13 @@ var _user$project$EditBoxBuilder$buildEditBoxQuestion = function (question) {
 var _user$project$JsonImporter$sampleQuestionJson = '\n    { \"uid\" : 1001\n    , \"title\" : \"Sample Title\"\n    , \"type\" : \"dropdown\"\n    , \"saveAction\" : \"\"\n    , \"options\" : \n        [ \"American\"\n        , \"Gambino\"\n        ]\n    , \"actions\" : \n      [ \n        [\n          { \"action\" : \"AddQuestion\"\n          , \"number\" : 1002\n          } \n          , \n          { \"action\" : \"RemoveQuestion\"\n          , \"number\" : 1003\n          }\n        ]\n        , \n        [\n          { \"action\" : \"RemoveQuestion\"\n          , \"number\" : 1002\n          }\n          , \n          { \"action\" : \"AddQuestion\"\n          , \"number\" : 1003\n          }\n        ] \n      ]\n    , \"childQuestions\" : []\n    }\n  ';
 var _user$project$JsonImporter$decodeSaveAction = function (string) {
 	var _p0 = _elm_lang$core$String$toLower(string);
-	if (_p0 === 'savetext') {
-		return _elm_lang$core$Json_Decode$succeed(_user$project$Model$SaveText);
-	} else {
-		return _elm_lang$core$Json_Decode$succeed(_user$project$Model$None);
+	switch (_p0) {
+		case 'savetext':
+			return _elm_lang$core$Json_Decode$succeed(_user$project$Model$SaveText);
+		case 'saveall':
+			return _elm_lang$core$Json_Decode$succeed(_user$project$Model$SaveAll);
+		default:
+			return _elm_lang$core$Json_Decode$succeed(_user$project$Model$None);
 	}
 };
 var _user$project$JsonImporter$questionTypeDecoder = function (string) {
