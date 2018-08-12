@@ -9,9 +9,10 @@ I'm thinking of re-writing the gem so it works best for jekyll using the jekyll 
 
 TODO:
 
-use gem locally and jekyll-assets to build locally. 
+[_] use gem locally and jekyll-assets to build locally. 
+[_] make sure json schema is up to date.
 
-make sure json schema is up to date.
 
 Text © David Acevedo
+
 Images copyrighted by their respective creators.

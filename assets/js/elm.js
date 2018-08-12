@@ -8572,7 +8572,11 @@ var _user$project$Model$initialModel = {
 		_1: {
 			ctor: '::',
 			_0: 200,
-			_1: {ctor: '[]'}
+			_1: {
+				ctor: '::',
+				_0: 113,
+				_1: {ctor: '[]'}
+			}
 		}
 	},
 	questionList: {
@@ -9463,7 +9467,7 @@ var _user$project$ButtonBuilder$buildButton = function (question) {
 				_elm_lang$html$Html$button,
 				{
 					ctor: '::',
-					_0: _elm_lang$html$Html_Attributes$class(_user$project$CssTranslation$css.button_outline),
+					_0: _elm_lang$html$Html_Attributes$class('btn btn-outline-secondary'),
 					_1: {
 						ctor: '::',
 						_0: _elm_lang$html$Html_Events$onClick(
@@ -10594,7 +10598,16 @@ var _user$project$RadioButtonBuilder$listOfRadioButtons = function (question) {
 							{
 								ctor: '::',
 								_0: _elm_lang$html$Html_Attributes$for(optionName),
-								_1: {ctor: '[]'}
+								_1: {
+									ctor: '::',
+									_0: _elm_lang$html$Html_Attributes$style(
+										{
+											ctor: '::',
+											_0: {ctor: '_Tuple2', _0: 'padding-left', _1: '5px'},
+											_1: {ctor: '[]'}
+										}),
+									_1: {ctor: '[]'}
+								}
 							},
 							{
 								ctor: '::',
@@ -10794,7 +10807,19 @@ var _user$project$TableBuilder$cssGridStyle = function (columns) {
 				_1: {
 					ctor: '::',
 					_0: {ctor: '_Tuple2', _0: 'grid-gap', _1: '15px'},
-					_1: {ctor: '[]'}
+					_1: {
+						ctor: '::',
+						_0: {ctor: '_Tuple2', _0: 'margin', _1: '10px'},
+						_1: {
+							ctor: '::',
+							_0: {ctor: '_Tuple2', _0: 'padding-bottom', _1: '10px'},
+							_1: {
+								ctor: '::',
+								_0: {ctor: '_Tuple2', _0: 'padding-top', _1: '10px'},
+								_1: {ctor: '[]'}
+							}
+						}
+					}
 				}
 			}
 		}
@@ -10991,7 +11016,7 @@ var _user$project$View$viewFooter = A2(
 			},
 			{
 				ctor: '::',
-				_0: _elm_lang$html$Html$text('Elm Document Builder, coded with 💚 by rebelwarrior'),
+				_0: _elm_lang$html$Html$text('Elm Document Builder coded with 💚 by rebelwarrior'),
 				_1: {ctor: '[]'}
 			}),
 		_1: {ctor: '[]'}
