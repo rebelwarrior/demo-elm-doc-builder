@@ -8569,7 +8569,11 @@ var _user$project$Model$initialModel = {
 	questionsInPage: {
 		ctor: '::',
 		_0: 1000,
-		_1: {ctor: '[]'}
+		_1: {
+			ctor: '::',
+			_0: 200,
+			_1: {ctor: '[]'}
+		}
 	},
 	questionList: {
 		ctor: '::',
@@ -10192,6 +10196,8 @@ var _user$project$JsonImporter$decodeAction = function () {
 				case 'replacealloptions':
 					return _elm_lang$core$Json_Decode$succeed(
 						A2(_user$project$Model$ReplaceAllOptions, number, listOptions));
+				case 'print':
+					return _elm_lang$core$Json_Decode$succeed(_user$project$Model$Print);
 				default:
 					return _elm_lang$core$Json_Decode$fail(
 						A2(_elm_lang$core$Basics_ops['++'], 'Unable to decode action: ', action));
@@ -10982,7 +10988,7 @@ var _user$project$View$viewFooter = A2(
 			},
 			{
 				ctor: '::',
-				_0: _elm_lang$html$Html$text('coded with 💚 by rebelwarrior'),
+				_0: _elm_lang$html$Html$text('Elm Document Builder, coded with 💚 by rebelwarrior'),
 				_1: {ctor: '[]'}
 			}),
 		_1: {ctor: '[]'}
@@ -10999,35 +11005,7 @@ var _user$project$View$viewH1 = A2(
 		_0: A2(
 			_elm_lang$html$Html$h1,
 			{ctor: '[]'},
-			{
-				ctor: '::',
-				_0: A2(
-					_elm_lang$html$Html$a,
-					{
-						ctor: '::',
-						_0: _elm_lang$html$Html_Attributes$href('#/'),
-						_1: {
-							ctor: '::',
-							_0: _elm_lang$html$Html_Attributes$style(
-								{
-									ctor: '::',
-									_0: {ctor: '_Tuple2', _0: 'color', _1: 'inherit'},
-									_1: {
-										ctor: '::',
-										_0: {ctor: '_Tuple2', _0: 'text-decoration', _1: 'inherit'},
-										_1: {ctor: '[]'}
-									}
-								}),
-							_1: {ctor: '[]'}
-						}
-					},
-					{
-						ctor: '::',
-						_0: _elm_lang$html$Html$text('Elm Document Builder'),
-						_1: {ctor: '[]'}
-					}),
-				_1: {ctor: '[]'}
-			}),
+			{ctor: '[]'}),
 		_1: {ctor: '[]'}
 	});
 var _user$project$View$view = function (model) {

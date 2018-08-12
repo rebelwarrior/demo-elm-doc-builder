@@ -8,7 +8,7 @@
             "    ![fighter](https://pre00.deviantart.net/d6b9/th/pre/f/2011/272/7/2/branwen_the_deathdancer_by_grb76-d4b78yr.jpg) <style> img{text-align: left; max-width: 400px; max-height: 350px; float: right;} </style>"       
         ],
         "type": "markdown",
-        "saveAction": "",
+        "saveAction": "SaveAll",
         "options": [],
         "actions": [],
         "childQuestions": []
@@ -19,7 +19,8 @@
         "text": [
             "__The Fighter__ Warriors, soldiers, and the famed defenders of the realm while many know how to fight the _fighter_ class is a true warrior, trained, honed, capable. Many fighters in the Seven Kingdoms don't do it as a full-time, many are farmers, builders, craftmen but all have the strength to protect civilization. _'The spit and blood fill your mouth, dirt bites your eyes and yet, one simply does not give up.' - King Rodus of Alaria_"
         ],
-        "type": "markdown"
+        "type": "markdown",
+        "saveAction": "SaveAll"
     },
     {
         "uid": 104,
@@ -29,7 +30,7 @@
             "    ![thief](https://pre00.deviantart.net/cf38/th/pre/f/2014/182/a/3/blackguard_by_i_guyjin_i-d7otvub.jpg) <style> img{text-align: left; max-width: 400px; max-height: 350px; float: right;} </style>"
         ],
         "type": "markdown",
-        "saveAction": "",
+        "saveAction": "SaveAll",
         "options": [],
         "actions": [],
         "childQuestions": []
@@ -40,7 +41,8 @@
         "text": [
             "__The Thief__ Quiet as as ghosts they prowl, maybe working for a living is not for them, maybe it is proving their worth, or maybe this is all they know how to do. Why toil in life when so many good things are just ripe for the taking? Caravans full of riches travel your land; maybe they should pay a toll for that, and why not you to collect it? _'All adventures are thieves... just some are honest about it.' – Pathfinder_"
         ],
-        "type": "markdown"
+        "type": "markdown",
+        "saveAction": "SaveAll"
     },
     {
         "uid": 106,
@@ -50,7 +52,7 @@
             "    ![wizard](https://img00.deviantart.net/d658/i/2012/072/8/3/black_mage_by_jedi_art_trick-d4smmpk.jpg)<style> img{text-align: left; max-width: 400px; max-height: 350px; float: right;} </style>"
         ],
         "type": "markdown",
-        "saveAction": "",
+        "saveAction": "SaveAll",
         "options": [],
         "actions": [],
         "childQuestions": []
@@ -61,7 +63,8 @@
         "text": [
             "They cover their faces and identities to protect their families. It can be hard to tell if they are female or male.  'I don't much like them, but they come in handy in a pinch.' -- Captain Friggard."
         ],
-        "type": "markdown"
+        "type": "markdown",
+        "saveAction": "SaveAll"
     },
     {
         "uid": 108,
@@ -71,7 +74,7 @@
             "    ![cleric](https://pre00.deviantart.net/c842/th/pre/f/2017/106/a/1/concept__cleric_of_sarenrae_in_training_by_asphillipsart-db62nll.png)<style> img{text-align: left; max-width: 400px; max-height: 350px; float: right;} </style>"
         ],
         "type": "markdown",
-        "saveAction": "",
+        "saveAction": "SaveAll",
         "options": [],
         "actions": [],
         "childQuestions": []
@@ -82,7 +85,8 @@
         "text": [
             "desc. cleric"
         ],
-        "type": "markdown"
+        "type": "markdown",
+        "saveAction": "SaveAll"
     },
     {
         "uid": 100,
@@ -441,19 +445,22 @@
         "title": "The Elf",
         "text": [
         ],
-        "type": "subheading"
+        "type": "subheading",
+        "saveAction": "SaveAll"
     },
     {
         "uid": 302,
         "title": "The Human",
         "text": [],
-        "type": "subheading"
+        "type": "subheading",
+        "saveAction": "SaveAll"
     },
     {
         "uid": 303,
         "title": "The Half-Elf",
         "text": [],
-        "type": "subheading"
+        "type": "subheading",
+        "saveAction": "SaveAll"
     },
     {
         "uid": 401,
@@ -467,7 +474,11 @@
         "text": ["click to get print view"],
         "type": "button",
         "saveAction": "SaveAll",
-        "actions" : []
+        "actions" : [[
+                {
+                    "action": "Print"
+                }
+            ]]
     },
     {
         "uid": 400,
@@ -476,6 +487,7 @@
             "Enter your character's story."
         ],
         "type": "textbox",
+        "saveAction": "SaveAll",
         "actions": []
     },
     {
@@ -501,7 +513,7 @@
             "Your Abilities determine your bonuses"
         ],
         "type": "table",
-        "saveAction": "",
+        "saveAction": "SaveAll",
         "options": [
             "Str",
             "Dex",
