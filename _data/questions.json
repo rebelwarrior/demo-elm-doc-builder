@@ -488,6 +488,7 @@
         ],
         "type": "textbox",
         "saveAction": "SaveText",
+        "options": [ "Once the sun rises, your lips smack of adventure."],
         "actions": []
     },
     {
