@@ -4899,7 +4899,7 @@ var elm$json$Json$Decode$errorToStringHelp = F2(
 var elm$json$Json$Decode$decodeString = _Json_runOnString;
 var elm$json$Json$Decode$int = _Json_decodeInt;
 var elm$json$Json$Decode$list = _Json_decodeList;
-var author$project$JsonImporter$importQuestionInPage = function (jsonString) {
+var author$project$JsonImporter$decodeImportQuestionInPage = function (jsonString) {
 	var result = A2(
 		elm$json$Json$Decode$decodeString,
 		elm$json$Json$Decode$list(elm$json$Json$Decode$int),
@@ -5054,8 +5054,12 @@ var author$project$JsonImporter$decodeSaveAction = function (string) {
 			return elm$json$Json$Decode$succeed(0);
 		case 'saveall':
 			return elm$json$Json$Decode$succeed(1);
-		default:
+		case 'none':
 			return elm$json$Json$Decode$succeed(3);
+		case '':
+			return elm$json$Json$Decode$succeed(3);
+		default:
+			return elm$json$Json$Decode$fail('Don\'t understand ' + (string + 'as a save action.'));
 	}
 };
 var author$project$Model$Button = 7;
@@ -5068,7 +5072,6 @@ var author$project$Model$RadioButton = 3;
 var author$project$Model$SubHeading = 9;
 var author$project$Model$Table = 8;
 var author$project$Model$TextArea = 6;
-var author$project$Model$TextBox = 5;
 var author$project$Model$TextInput = 10;
 var author$project$JsonImporter$questionTypeDecoder = function (string) {
 	var _n0 = elm$core$String$toLower(string);
@@ -5084,7 +5087,7 @@ var author$project$JsonImporter$questionTypeDecoder = function (string) {
 		case 'editbox':
 			return elm$json$Json$Decode$succeed(4);
 		case 'textbox':
-			return elm$json$Json$Decode$succeed(5);
+			return elm$json$Json$Decode$fail('Textbox can\'t imported, you may want editbox.');
 		case 'textinput':
 			return elm$json$Json$Decode$succeed(10);
 		case 'textarea':
@@ -5098,7 +5101,7 @@ var author$project$JsonImporter$questionTypeDecoder = function (string) {
 		case 'notaquestion':
 			return elm$json$Json$Decode$succeed(12);
 		default:
-			return elm$json$Json$Decode$fail('Value ' + (string + 'Is not a question type.'));
+			return elm$json$Json$Decode$fail('Don\'t understand ' + (string + 'as a question type.'));
 	}
 };
 var author$project$Model$QuestionRecord = F8(
@@ -5145,7 +5148,7 @@ var author$project$JsonImporter$questionDecoder = A4(
 								elm$json$Json$Decode$int,
 								elm$json$Json$Decode$succeed(author$project$Model$QuestionRecord)))))))));
 var author$project$JsonImporter$decodeListOfQuestions = elm$json$Json$Decode$list(author$project$JsonImporter$questionDecoder);
-var author$project$JsonImporter$importQuestionsJson = function (jsonString) {
+var author$project$JsonImporter$decodeImportQuestionsJson = function (jsonString) {
 	var result = A2(elm$json$Json$Decode$decodeString, author$project$JsonImporter$decodeListOfQuestions, jsonString);
 	if (result.$ === 1) {
 		var m = result.a;
@@ -5242,8 +5245,8 @@ var elm$core$Result$withDefault = F2(
 		}
 	});
 var author$project$Main$processFlags = function (flag) {
-	var listOfQuestionsResult = author$project$JsonImporter$importQuestionsJson(flag.N);
-	var listOfQuestionsOnPageResult = author$project$JsonImporter$importQuestionInPage(flag.I);
+	var listOfQuestionsResult = author$project$JsonImporter$decodeImportQuestionsJson(flag.N);
+	var listOfQuestionsOnPageResult = author$project$JsonImporter$decodeImportQuestionInPage(flag.I);
 	var initialQuestionsList = A2(elm$core$Result$withDefault, _List_Nil, listOfQuestionsResult);
 	var initialQuestionsInPage = A2(elm$core$Result$withDefault, _List_Nil, listOfQuestionsOnPageResult);
 	var initialBuildDocStatus = false;
@@ -5269,6 +5272,7 @@ var elm$core$Platform$Sub$none = elm$core$Platform$Sub$batch(_List_Nil);
 var author$project$Main$subscriptions = function (model) {
 	return elm$core$Platform$Sub$none;
 };
+var author$project$Model$TextBox = 5;
 var author$project$Update$insertIntoListAfter = F4(
 	function (num, afterNum, newList, list) {
 		insertIntoListAfter:
@@ -6715,12 +6719,14 @@ var author$project$TableBuilder$inputBoxBuilder = function (content) {
 					[
 						elm$html$Html$Attributes$type_('text'),
 						elm$html$Html$Attributes$class('form-control table-form'),
+						A2(elm$html$Html$Attributes$style, 'width', '-webkit-fill-available'),
 						elm$html$Html$Attributes$id(labelText),
 						elm$html$Html$Attributes$placeholder(placeholderText)
 					]),
 				_List_Nil)
 			]));
 };
+var elm$html$Html$Attributes$title = elm$html$Html$Attributes$stringProperty('title');
 var author$project$TableBuilder$itemBuilder = F2(
 	function (i, content) {
 		return A2(
@@ -6728,7 +6734,8 @@ var author$project$TableBuilder$itemBuilder = F2(
 			_List_fromArray(
 				[
 					elm$html$Html$Attributes$class(
-					'item--' + elm$core$String$fromInt(i))
+					'item--' + elm$core$String$fromInt(i)),
+					elm$html$Html$Attributes$title(content)
 				]),
 			_List_fromArray(
 				[

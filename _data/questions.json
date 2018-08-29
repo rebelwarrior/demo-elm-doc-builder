@@ -486,7 +486,7 @@
         "text": [
             "Enter your character's story."
         ],
-        "type": "textbox",
+        "type": "editbox",
         "saveAction": "SaveText",
         "options": [ "Once the sun rises, your lips smack of adventure."],
         "actions": []
