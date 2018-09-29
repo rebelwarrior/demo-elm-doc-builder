@@ -6776,7 +6776,7 @@ var author$project$TableBuilder$inputBoxBuilder = function (content) {
 				_List_fromArray(
 					[
 						elm$html$Html$Attributes$type_('text'),
-						elm$html$Html$Attributes$class('form-control table-form'),
+						elm$html$Html$Attributes$class('form-control table-form css-grid-table'),
 						A2(elm$html$Html$Attributes$style, 'width', '-webkit-fill-available'),
 						elm$html$Html$Attributes$id(labelText),
 						elm$html$Html$Attributes$placeholder(placeholderText)
