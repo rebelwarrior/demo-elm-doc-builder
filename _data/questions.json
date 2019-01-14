@@ -4,8 +4,8 @@
         "uid": 102,
         "title": "",
         "text": [
-            "_fighter image from devianart_ copyrighted by respective artist",
-            "    ![fighter](https://pre00.deviantart.net/d6b9/th/pre/f/2011/272/7/2/branwen_the_deathdancer_by_grb76-d4b78yr.jpg) <style> img{text-align: left; max-width: 400px; max-height: 350px; float: right;} </style>"       
+            "_fighter image from [devianart](https://www.deviantart.com/sirtiefling/art/Branwen-the-Deathdancer-260678691)_ copyrighted by respective artist",
+            "    ![fighter](https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/intermediary/f/ecd743aa-b751-48c0-86bc-d33576fe5f20/d4b78yr-ec387938-093a-4eab-859c-306134b2fe61.jpg/v1/fill/w_761,h_1050,q_70,strp/branwen_the_deathdancer_by_sirtiefling_d4b78yr-pre.jpg) <style> img{text-align: left; max-width: 400px; max-height: 350px; float: right;} </style>"       
         ],
         "type": "markdown",
         "saveAction": "SaveAll",
@@ -26,8 +26,8 @@
         "uid": 104,
         "title": "",
         "text": [
-            "_thief image from devianart_ copyrighted by respective artist",
-            "    ![thief](https://pre00.deviantart.net/cf38/th/pre/f/2014/182/a/3/blackguard_by_i_guyjin_i-d7otvub.jpg) <style> img{text-align: left; max-width: 400px; max-height: 350px; float: right;} </style>"
+            "_thief image from [devianart](https://www.deviantart.com/i-guyjin-i/art/Blackguard-464968307)_ copyrighted by respective artist",
+            "    ![thief](https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/intermediary/f/70cd4cbe-842b-47c8-ad0e-9fe3a899a780/d7otvub-9d0c4981-110c-489b-a2f6-11aae950be52.jpg/v1/fill/w_730,h_1095,q_70,strp/blackguard_by_i_guyjin_i_d7otvub-pre.jpg) <style> img{text-align: left; max-width: 400px; max-height: 350px; float: right;} </style>"
         ],
         "type": "markdown",
         "saveAction": "SaveAll",
@@ -49,7 +49,7 @@
         "title": "",
         "text": [
             "_wizard image from [devianart](https://jedi-art-trick.deviantart.com/art/Black-Mage-289949816)_ copyrighted by respective artist",
-            "    ![wizard](https://img00.deviantart.net/d658/i/2012/072/8/3/black_mage_by_jedi_art_trick-d4smmpk.jpg)<style> img{text-align: left; max-width: 400px; max-height: 350px; float: right;} </style>"
+            "    ![wizard](https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/intermediary/f/5aa9eaeb-875b-403f-9c01-66b7b3a8ae18/d4smmpk-07de3392-c247-4d25-9bd7-f82f27c67d6f.jpg/v1/fill/w_600,h_1094,q_70,strp/black_mage_by_jedi_art_trick_d4smmpk-fullview.jpg)<style> img{text-align: left; max-width: 400px; max-height: 350px; float: right;} </style>"
         ],
         "type": "markdown",
         "saveAction": "SaveAll",
@@ -71,7 +71,7 @@
         "title": "",
         "text": [
             "_cleric image from [devianart](https://www.deviantart.com/asphillipsart/art/Concept-Cleric-of-Sarenrae-In-Training-675329529)_ copyrighted by respective artist",
-            "    ![cleric](https://pre00.deviantart.net/c842/th/pre/f/2017/106/a/1/concept__cleric_of_sarenrae_in_training_by_asphillipsart-db62nll.png)<style> img{text-align: left; max-width: 400px; max-height: 350px; float: right;} </style>"
+            "    ![cleric](https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/intermediary/f/7bbf3bdd-8a05-4d6c-948f-c99f40b6854f/db62nll-a346aded-5a26-442d-bacd-2b71b4dddd0a.png/v1/fill/w_786,h_1017,q_70,strp/concept__cleric_of_sarenrae_in_training_by_asphillipsart_db62nll-pre.jpg)<style> img{text-align: left; max-width: 400px; max-height: 350px; float: right;} </style>"
         ],
         "type": "markdown",
         "saveAction": "SaveAll",
@@ -383,14 +383,29 @@
         "uid": 200,
         "title": "Choose Your Race",
         "text": ["Of what were you born?"],
-        "type": "radio",
+        "type": "dropdown",
         "saveAction": "",
         "options": [
+            "select race",
             "human",
             "half-elf",
-            "elf"
+            "Wizard"
         ],
         "actions": [
+            [
+                {
+                    "action": "RemoveQuestion",
+                    "number": 302
+                },
+                {
+                    "action": "RemoveQuestion",
+                    "number": 303
+                },
+                {
+                    "action": "RemoveQuestion",
+                    "number": 301
+                }
+            ],
             [
                 {
                     "action": "AddQuestionBelow",
