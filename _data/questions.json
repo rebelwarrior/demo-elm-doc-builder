@@ -383,29 +383,14 @@
         "uid": 200,
         "title": "Choose Your Race",
         "text": ["Of what were you born?"],
-        "type": "dropdown",
+        "type": "radio",
         "saveAction": "",
         "options": [
-            "select race",
             "human",
             "half-elf",
-            "Wizard"
+            "elf"
         ],
         "actions": [
-            [
-                {
-                    "action": "RemoveQuestion",
-                    "number": 302
-                },
-                {
-                    "action": "RemoveQuestion",
-                    "number": 303
-                },
-                {
-                    "action": "RemoveQuestion",
-                    "number": 301
-                }
-            ],
             [
                 {
                     "action": "AddQuestionBelow",
