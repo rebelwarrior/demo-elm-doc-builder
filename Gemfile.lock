@@ -69,7 +69,7 @@ PLATFORMS
   arm64-darwin-20
 
 DEPENDENCIES
-  jekyll
+  jekyll (~> 4.2)
   minima (~> 2.0)
   tzinfo-data
 
